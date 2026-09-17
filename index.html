@@ -77,6 +77,8 @@
   }
   button.ghost{background:transparent; color:var(--ink-3); border-color:var(--line-strong); font-weight:500; font-size:12px; padding:6px 11px;}
 
+  .formula{font-family:var(--mono); font-size:12.5px; font-weight:600; color:var(--ink); padding:12px 18px 0; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
+  .formula .hint{font-family:var(--sans); font-weight:400;}
   .budgetrow{display:flex; align-items:center; gap:10px; padding:14px 18px 4px; flex-wrap:wrap;}
   .budgetrow label{font-size:12px; font-weight:700; color:var(--ink-2);}
   .budgetrow input{width:100px;}
@@ -180,6 +182,7 @@
 
     <div class="panel">
       <div class="ptitle">우선순위 큐 <span class="count" id="cntB">0</span>건 <span style="font-weight:400;text-transform:none;letter-spacing:0;">— WSJF 내림차순</span></div>
+      <div class="formula">WSJF = (BV + TC + RR) ÷ MM <span class="hint">— 가치 합계를 공수로 나눈 값, 클수록 우선</span></div>
       <div class="budgetrow">
         <label for="budget">이번 달 배정 가능 MM</label>
         <input id="budget" type="number" min="0" step="0.25" value="1.6">
